@@ -1,5 +1,6 @@
-CogniRead 🚀
+CogniRead 🚀 
 Tagline: Summarize. Ask. Understand.
+vidoe link: https://youtu.be/d3iccnpMoPw
 
 This is the official repository for CogniRead, an AI-powered reading assistant built as a Chrome Extension for the Google Chrome AI Challenge 2025.
 
@@ -42,4 +43,5 @@ Browser API: Chrome Extensions Manifest V3
 Platform APIs: chrome.storage, chrome.runtime, chrome.tabs
 AI: Google Gemini API (v1/gemini-pro stable model)
 Utilities: fetch API for asynchronous calls
+
 
