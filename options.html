@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options</title>
+    <style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+  margin: 40px;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+}
+
+.from-group {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  display: block;
+  width: 30%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 35%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  text-align: center;
+  color: green;
+  display: none;
+  margin-top: 10px;
+}
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+  display: none; /* hide by default */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+    </style>
+</head>
+<body>
+ <h1>CogniRead Settings</h1>
+
+ <div class="from-group">
+    <label for="api-key">Gemini API Key</label>
+    <input type="text" id="api-key" placeholder="Enter your Gemini API key" />
+
+    <p>
+        You can get an API key from-group
+        <a href="https://aistudio.google.com/app/api-keys" target="_blank">
+            Google AI Studio
+        </a>
+    </p>
+ </div>
+
+ <button id="save-button">Save Settings</button>
+ <p id="success-message" class="success-message">
+  Setting saved successfully!
+ </p>
+ <script src="options.js"></script>
+</body>
+</html>
